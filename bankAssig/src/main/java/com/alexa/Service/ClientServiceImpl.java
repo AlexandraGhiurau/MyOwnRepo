@@ -22,19 +22,19 @@ public class ClientServiceImpl implements  ClientService{
     }
 
     /* 1 */
-    @Override
+   /* @Override*/
     public List<Client> findByName(String name) {
         return clientRepo.findByName(name);
     }
 
     /* 2 */
-    @Override
+    /*@Override*/
     public List<Client> findByPersonalNumCode(long personalNumCode) {
         return clientRepo.findByPersonalNumCode(personalNumCode);
     }
 
     /* 3 */
-    @Override
+    /*@Override*/
     public List<Client> findByCardNo(String cardNo) {
         return clientRepo.findByCardNo(cardNo);
     }
