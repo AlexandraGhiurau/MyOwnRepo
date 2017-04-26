@@ -38,6 +38,7 @@
                 <form:input type="text" path="username" class="form-control" placeholder="Username"
                             autofocus="true"></form:input>
                 <form:errors path="username"></form:errors>
+                <span>${error1}</span>
             </div>
         </spring:bind>
 
@@ -45,6 +46,7 @@
             <div class="form-group ${status.error ? 'has-error' : ''}">
                 <form:input type="password" path="password" class="form-control" placeholder="Password"></form:input>
                 <form:errors path="password"></form:errors>
+                <span>${error2}</span>
             </div>
         </spring:bind>
 
@@ -53,6 +55,7 @@
                 <form:input type="password" path="passwordConfirm" class="form-control"
                             placeholder="Confirm your password"></form:input>
                 <form:errors path="passwordConfirm"></form:errors>
+                <span>${error3}</span>
             </div>
         </spring:bind>
 

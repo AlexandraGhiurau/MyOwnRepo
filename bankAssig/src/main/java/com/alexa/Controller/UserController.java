@@ -2,11 +2,8 @@ package com.alexa.Controller;
 
 import com.alexa.Entity.User;
 import com.alexa.Service.UserService;
-import com.alexa.validator.UserValidator;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
-import org.springframework.ui.Model;
-import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Collection;

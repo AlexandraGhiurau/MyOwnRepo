@@ -33,6 +33,13 @@ public  class User {
     @JoinColumn(name ="user_id")
     private List<Activity> activities;
 
+    public User(){
+
+    }
+
+    public User(UserRole userRole){
+        this.role = userRole;
+    }
     @Transient
     public String getPasswordConfirm() {
         return passwordConfirm;

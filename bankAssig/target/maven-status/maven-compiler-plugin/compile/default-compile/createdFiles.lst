@@ -10,7 +10,6 @@ com\alexa\Entity\UserRole.class
 com\alexa\Service\UserServiceImpl.class
 com\alexa\DAO\UserRepo.class
 com\alexa\Entity\Client.class
-com\alexa\validator\UserValidator.class
 com\alexa\DAO\ClientRepo.class
 com\alexa\Entity\Account.class
 com\alexa\Controller\UserController.class

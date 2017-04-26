@@ -12,29 +12,29 @@ public class Client {
     @GeneratedValue
     private int pKey;
 
-    @OneToMany
-    @JoinColumn(name ="client_id")
-    private List<Account> accounts; //va fi coloana in account
-
     @Column(name ="name")
     private String name;
 
-    @Column(name ="card_no")
-    private String cardNo;
+    @Column(name ="address")
+    private String address;
 
     @Column(name ="personal_num_code")
     private long personalNumCode;
 
-    @Column(name ="address")
-    private String address;
+    @Column(name ="card_no")
+    private String cardNo;
+
+    @OneToMany
+    @JoinColumn(name ="client_id")
+    private List<Account> accounts; //va fi coloana in account
 
     public Client(){}
 
     public Client(String name, String cardNo, long personalNumCode, String address) {
         this.name = name;
+        this.address = address;
         this.cardNo = cardNo;
         this.personalNumCode = personalNumCode;
-        this.address = address;
     }
 
     public Client(String name, String cardNo, long personalNumCode, String address, int pKey) {

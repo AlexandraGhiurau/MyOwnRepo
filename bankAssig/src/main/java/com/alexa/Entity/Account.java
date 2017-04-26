@@ -1,6 +1,9 @@
 package com.alexa.Entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.*;
+import java.sql.Date;
 
 @Entity
 @Table(name = "account")
@@ -15,6 +18,9 @@ public class Account {
 
     @Column(name ="type")
     private String type;
+
+    @Column(name="date_of_creation")
+    private Date dateOfClient;
 
     public Account() {}
 
@@ -46,5 +52,13 @@ public class Account {
 
     public void setType(String type) {
         this.type = type;
+    }
+
+    public Date getDateOfClient() {
+        return dateOfClient;
+    }
+
+    public void setDateOfClient(Date dateOfClient) {
+        this.dateOfClient = dateOfClient;
     }
 }

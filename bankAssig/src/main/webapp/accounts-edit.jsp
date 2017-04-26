@@ -20,38 +20,27 @@
 <body>
 <h1>Edit page</h1>
 <%--<form:form method="POST" commandName="client" action="${pageContext.request.contextPath}/clients/edit/${client.pKey}.html" >--%>
-<form:form method="POST" commandName="client" action="${pageContext.request.contextPath}/clients/edit/${client.pKey}" >
+<form:form method="POST" commandName="account" action="${pageContext.request.contextPath}/account/edit/${account.accountId}" >
     <table>
         <tbody>
         <tr>
-            <td>Client name:</td>
-            <td><form:input path="name" /></td>
-            <td><form:errors path="name" cssStyle="color: red;"/></td>
+            <td>Account ID:</td>
+            <td><form:input path="accountId" /></td>
+            <td><form:errors path="accountId" cssStyle="color: red;"/></td>
         </tr>
 
         <tr>
-            <td>Client cardNo:</td>
-            <td><form:input path="cardNo" /></td>
-            <td><form:errors path="cardNo" cssStyle="color: red;"/></td>
+            <td>Account money:</td>
+            <td><form:input path="money" /></td>
+            <td><form:errors path="money" cssStyle="color: red;"/></td>
         </tr>
 
         <tr>
-            <td>Client address:</td>
-            <td><form:input path="address" /></td>
-            <td><form:errors path="address" cssStyle="color: red;"/></td>
+            <td>Account type:</td>
+            <td><form:input path="type" /></td>
+            <td><form:errors path="type" cssStyle="color: red;"/></td>
         </tr>
 
-        <tr>
-            <td>Client personalNumCode:</td>
-            <td><form:input path="personalNumCode" /></td>
-            <td><form:errors path="personalNumCode" cssStyle="color: red;"/></td>
-        </tr>
-
-        <%--<tr>--%>
-            <%--<td>Clients account:</td>--%>
-            <%--<td><form:input path="accounts" /></td>--%>
-            <%--<td><form:errors path="accounts" cssStyle="color: red;"/></td>--%>
-        <%--</tr>--%>
         <tr>
             <td><input type="submit" value="Edit" /></td>
             <td></td>
